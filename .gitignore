@@ -1,0 +1,36 @@
+# Local Terraform state
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Ignore sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually for local use only
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# .terraform directory
+.terraform/
+
+# .DS_Store (macOS)
+.DS_Store
+
+# Log files
+*.log
+
+# SSH key files
+*.pem
+*.key
+
+# Python virtual environment
+venv/
