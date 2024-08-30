@@ -1,23 +1,21 @@
 variable "source_region" {
-  description = "AWS Deployment region.."
-  type = string
-  default = "us-west-1"
+  description = "AWS Deployment region for source."
+  type        = string
+  default     = "us-west-1"
 }
 
 variable "dest_region" {
-  description = "AWS Deployment region.."
-  type = string
-  default = "us-west-1"
+  description = "AWS Deployment region for destination."
+  type        = string
+  default     = "us-west-1"
 }
 
-variable "source_bucket_name" {
-  description = "Your Source Bucket Name"
-  type = string
-  default = "insureprobuilders-ncalifornia-prod-app-0-ss"
+variable "source_bucket_names" {
+  description = "List of source bucket names."
+  type        = list(string)
 }
 
-variable "dest_bucket_name" {
-  description = "Your Destination Bucket Name"
-  type = string
-  default = "insureprobuilders-ncalifornia-prod-app-0-ss-dr"
+variable "dest_bucket_names" {
+  description = "List of destination bucket names."
+  type        = list(string)
 }
